@@ -70,7 +70,7 @@ const FormPage3 = ({ submitButtonText, previousButton }) => {
   const [errorObject, setErrorObject] = useState("");
   return (
     <>
-      <Loader
+      {/* <Loader
         style={{
           display: "flex",
           justifyContent: "center",
@@ -83,7 +83,7 @@ const FormPage3 = ({ submitButtonText, previousButton }) => {
         height={100}
         width={100}
         timeout={1200}
-      ></Loader>
+      ></Loader> */}
 
       {/* Error Object */}
 
