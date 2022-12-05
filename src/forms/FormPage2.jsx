@@ -98,7 +98,7 @@ const FormPage2 = ({ submitButtonText, previousButton }) => {
 
   return (
     <>
-      <Loader
+      {/* <Loader
         style={{
           display: "flex",
           justifyContent: "center",
@@ -111,7 +111,7 @@ const FormPage2 = ({ submitButtonText, previousButton }) => {
         height={100}
         width={100}
         timeout={2000}
-      ></Loader>
+      ></Loader> */}
 
       <form
         className={`form ${!isActive ? "dull" : ""}`}
