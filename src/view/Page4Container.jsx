@@ -16,8 +16,8 @@ const Page4Container = () => {
           <img
             className="success-image"
             src={checkmark}
-            width={100}
-            height={100}
+            width={140}
+            height={125}
             alt=""
           />
 
