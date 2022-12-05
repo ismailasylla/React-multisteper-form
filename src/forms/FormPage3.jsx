@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { finalForm, formStage, pics, sign } from "../store/rootSlice"; // Actions
-import Loader from "react-loader-spinner";
+import * as Loader from "react-loader-spinner";
 import userIcon from "../assets/img/user-icon.png"; // Icons
 import folder from "../assets/img/folder.png"; // Icons
 import camera from "../assets/img/camera.png"; // Icons

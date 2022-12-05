@@ -3,8 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { formStage, formPage2 } from "../store/rootSlice"; // Actions
 import { schema2 } from "../components/YupSchema";
 import InputBox from "../components/InputBox";
-import Loader from "react-loader-spinner"; // Loading Indicator
+import * as Loader from "react-loader-spinner"; // Loading Indicator
 import { labels2 } from "../components/Labels";
+
 const FormPage2 = ({ submitButtonText, previousButton }) => {
   // redux
   const dispatch = useDispatch();
