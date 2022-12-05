@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { finalForm, formStage, pics, sign } from "../store/rootSlice"; // Actions
-import * as Loader from "react-loader-spinner";
 import userIcon from "../assets/img/user-icon.png"; // Icons
 import folder from "../assets/img/folder.png"; // Icons
 import camera from "../assets/img/camera.png"; // Icons
@@ -70,23 +69,6 @@ const FormPage3 = ({ submitButtonText, previousButton }) => {
   const [errorObject, setErrorObject] = useState("");
   return (
     <>
-      {/* <Loader
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "auto",
-          marginBottom: "auto",
-        }}
-        type="Circles"
-        color="#00BBFF"
-        height={100}
-        width={100}
-        timeout={1200}
-      ></Loader> */}
-
-      {/* Error Object */}
-
       <div className="error-object">{errorObject}</div>
 
       <div className={` ${!isActive ? "dull" : ""}`}>
@@ -199,7 +181,7 @@ const FormPage3 = ({ submitButtonText, previousButton }) => {
                   <p className="signature">
                     <SignaturePad
                       redrawOnResize
-                      placeholder="signature"
+                      placeholder="Signature"
                       ref={signaturePadRef}
                       options={{ penColor: "rgb(66,133,244)" }}
                     />

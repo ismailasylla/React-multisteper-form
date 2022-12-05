@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { formStage, formPage2 } from "../store/rootSlice"; // Actions
 import { schema2 } from "../components/YupSchema";
 import InputBox from "../components/InputBox";
-import * as Loader from "react-loader-spinner"; // Loading Indicator
 import { labels2 } from "../components/Labels";
 
 const FormPage2 = ({ submitButtonText, previousButton }) => {
@@ -98,21 +97,6 @@ const FormPage2 = ({ submitButtonText, previousButton }) => {
 
   return (
     <>
-      {/* <Loader
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "auto",
-          marginBottom: "auto",
-        }}
-        type="Circles"
-        color="#00BBFF"
-        height={100}
-        width={100}
-        timeout={2000}
-      ></Loader> */}
-
       <form
         className={`form ${!isActive ? "dull" : ""}`}
         onSubmit={(e) => handleSubmit(e)}
