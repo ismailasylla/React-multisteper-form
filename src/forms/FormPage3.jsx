@@ -8,6 +8,7 @@ import camera from "../assets/img/camera.png"; // Icons
 import SignaturePad from "react-signature-pad-wrapper"; //Signature pad
 import { WebcamCapture } from "../components/Webcam";
 import { labels1, labels2 } from "../components/Labels";
+import Loader from "react-loader-spinner";
 
 const FormPage3 = ({ submitButtonText, previousButton }) => {
   // Page 1 and Page 2 Store Datas in JSON format
@@ -69,6 +70,20 @@ const FormPage3 = ({ submitButtonText, previousButton }) => {
   const [errorObject, setErrorObject] = useState("");
   return (
     <>
+      <Loader
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "auto",
+          marginBottom: "auto",
+        }}
+        type="Oval"
+        color="#ee1b24"
+        height={100}
+        width={100}
+        timeout={2000}
+      ></Loader>
       <div className="error-object">{errorObject}</div>
 
       <div className={` ${!isActive ? "dull" : ""}`}>

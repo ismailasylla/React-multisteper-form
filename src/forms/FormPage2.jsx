@@ -4,6 +4,7 @@ import { formStage, formPage2 } from "../store/rootSlice"; // Actions
 import { schema2 } from "../components/YupSchema";
 import InputBox from "../components/InputBox";
 import { labels2 } from "../components/Labels";
+import Loader from "react-loader-spinner"; // Loading Indicator
 
 const FormPage2 = ({ submitButtonText, previousButton }) => {
   // redux
@@ -97,6 +98,20 @@ const FormPage2 = ({ submitButtonText, previousButton }) => {
 
   return (
     <>
+      <Loader
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "auto",
+          marginBottom: "auto",
+        }}
+        type="Oval"
+        color="#ee1b24"
+        height={100}
+        width={100}
+        timeout={2000}
+      ></Loader>
       <form
         className={`form ${!isActive ? "dull" : ""}`}
         onSubmit={(e) => handleSubmit(e)}
