@@ -5,7 +5,7 @@ import { pics } from "../store/rootSlice";
 
 // Webcamera access and take snapshot using third party library react-webcam
 
-const WebcamComponent = () => <Webcam />;
+// const WebcamComponent = () => <Webcam />;
 
 // Video size configurations
 
